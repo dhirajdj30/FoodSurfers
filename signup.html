@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
     <link rel="stylesheet" href="login.css">
-	<title>Login Form Using HTML And CSS Only</title>
 </head>
 <body>
-	<div class="container" id="container">
-		<div class="form-container log-in-container">
-			<form action="#">
-				<h1>Register</h1>
-				<input type="email" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="email" placeholder="Mobile No" />
-				<input type="email" placeholder="Address" />
-                <div class="type">
-                    <label>
-                        <input type="radio" name="Type" value="Veg"> Veg
-                    </label>
-                    <label>
-                        <input type="radio" name="Type" value="Non-Veg"> NonVeg
-                    </label>
-                </div>
 
-				<button>Register</button>
-			</form>
-		</div>
-	</div>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Sign Up</h1>
+            </header>
+
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="email">Email id</label>
+                        <input type="text" id="email" required>
+                    </p>
+                    <p>
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" required>
+                    </p>
+
+                    <p>
+                        <input type="submit" id="submit" value="Create Account">
+                    </p>
+                </form>
+            </main>
+
+            <footer class="signup-footer">
+                <p>Dont have an account? <a href="#">Signup</a></p>
+            </footer>
+        </div>
+    </div>
+    
 </body>
 </html>
